@@ -1,6 +1,7 @@
 
 #include <string>
 #include <map>
+#include <limits>
 #include "board.hpp"
 
 // Welcomes the players to the game
@@ -46,6 +47,8 @@ void help_message() {
     cout << "   ---+---+---" << endl;
     cout << " 2    |   |   " << endl;
     cout << "Press [ENTER] to continue " << flush;
+    cin.ignore(10, '\n'); 
+    cin.get();
     cout << endl;
 }
 // " << b(0,0) << " " << b(0,0) << " " << b(0,0) << "
